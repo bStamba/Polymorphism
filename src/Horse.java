@@ -2,8 +2,7 @@ public class Horse extends Animal implements Pet{
 
     //Constructor to initialize our pet with age and name.
     public Horse(int age, String name){
-        setAge(age);
-        setName(name);
+        super(age, name);
     }
 
     @Override
@@ -17,18 +16,8 @@ public class Horse extends Animal implements Pet{
     }
 
     @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
     public int getAge() {
         return age;
-    }
-
-    @Override
-    public void setAge(int age) {
-        this.age = age;
     }
 
     @Override

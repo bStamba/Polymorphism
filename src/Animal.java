@@ -2,6 +2,11 @@ public abstract class Animal {
     String name;
     int age;
 
+    public Animal(int age, String name){
+        this.age = age;
+        this.name = name;
+    }
+
     public void sleep(){
         System.out.println("Zzzzz...");
     }
@@ -10,9 +15,5 @@ public abstract class Animal {
 
     public abstract String getName();
 
-    public abstract void setName(String name);
-
     public abstract int getAge();
-
-    public abstract void setAge(int age);
 }

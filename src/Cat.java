@@ -1,33 +1,19 @@
 public class Cat extends Animal implements Pet {
 
     public Cat(int age, String name){
-        setAge(age);
-        setName(name);
+        super(age, name);
     }
+
     @Override
     public void makeNoise() {
         System.out.println("Meoooow HISS");
     }
 
     @Override
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public int getAge() {
-        return age;
-    }
-
-    @Override
-    public void setAge(int age) {
-        this.age = age;
-    }
+    public int getAge() { return age; }
 
     @Override
     public void lickOwner() {
