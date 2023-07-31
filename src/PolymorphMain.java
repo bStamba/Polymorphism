@@ -2,13 +2,11 @@
 public class PolymorphMain {
     public static void main(String[] args) {
 
-        Cat kitty = new Cat();
-        Dog doggy = new Dog();
-        Horse horsey = new Horse();
+        Cat kitty = new Cat(7, "DJ");
+        Dog doggy = new Dog(5, "Flo");
+        Horse horsey = new Horse(12, "Bulldozer");
 
         //Let's mess around with our cat methods.
-        kitty.setAge(7);
-        kitty.setName("DJ");
         kitty.sleep();
         kitty.makeNoise();
         kitty.askForFood();
@@ -17,8 +15,6 @@ public class PolymorphMain {
         System.out.println();
 
         //Let's mess around with our dog methods.
-        doggy.setAge(5);
-        doggy.setName("Flo");
         doggy.sleep();
         doggy.makeNoise();
         doggy.askForFood();
@@ -27,8 +23,6 @@ public class PolymorphMain {
         System.out.println();
 
         //Let's mess around with our horse methods.
-        horsey.setAge(12);
-        horsey.setName("Bulldozer");
         horsey.sleep();
         horsey.makeNoise();
         horsey.askForFood();

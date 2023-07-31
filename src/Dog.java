@@ -1,5 +1,11 @@
 public class Dog extends Animal implements Pet{
 
+    //Constructor to initialize our pet with age and name.
+    public Dog(int age, String name){
+        setAge(age);
+        setName(name);
+    }
+
     @Override
     public void makeNoise() {
         System.out.println("Woof Woof");

@@ -1,5 +1,9 @@
 public class Cat extends Animal implements Pet {
 
+    public Cat(int age, String name){
+        setAge(age);
+        setName(name);
+    }
     @Override
     public void makeNoise() {
         System.out.println("Meoooow HISS");
