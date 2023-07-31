@@ -1,8 +1,5 @@
 public class Dog extends Animal{
 
-    private String name;
-    private int age;
-
     @Override
     public void makeNoise() {
         System.out.println("Woof Woof");
