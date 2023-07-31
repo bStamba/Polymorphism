@@ -11,6 +11,8 @@ public class PolymorphMain {
         kitty.setName("DJ");
         kitty.sleep();
         kitty.makeNoise();
+        kitty.askForFood();
+        kitty.lickOwner();
         System.out.println("Our cat is named " + kitty.getName() + " and is " + kitty.getAge() + " years old.");
         System.out.println();
 
@@ -19,6 +21,8 @@ public class PolymorphMain {
         doggy.setName("Flo");
         doggy.sleep();
         doggy.makeNoise();
+        doggy.askForFood();
+        doggy.lickOwner();
         System.out.println("Our dog is named " + doggy.getName() + " and is " + doggy.getAge() + " years old.");
         System.out.println();
 
@@ -27,6 +31,8 @@ public class PolymorphMain {
         horsey.setName("Bulldozer");
         horsey.sleep();
         horsey.makeNoise();
-        System.out.println("Our cat is named " + horsey.getName() + " and is " + horsey.getAge() + " years old.");
+        horsey.askForFood();
+        horsey.lickOwner();
+        System.out.println("Our horse is named " + horsey.getName() + " and is " + horsey.getAge() + " years old.");
     }
 }

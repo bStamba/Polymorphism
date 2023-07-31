@@ -1,4 +1,4 @@
-public class Cat extends Animal {
+public class Cat extends Animal implements Pet {
 
     @Override
     public void makeNoise() {
@@ -23,5 +23,15 @@ public class Cat extends Animal {
     @Override
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public void lickOwner() {
+        System.out.println("Lick lick lick");
+    }
+
+    @Override
+    public void askForFood() {
+        System.out.println("Meow meow meow meow I want meow mix!");
     }
 }
