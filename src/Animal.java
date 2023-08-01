@@ -1,4 +1,5 @@
 public abstract class Animal {
+
     String name;
     int age;
 
@@ -7,7 +8,7 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public void sleep(){
+    public void sleep() {
         System.out.println("Zzzzz...");
     }
 

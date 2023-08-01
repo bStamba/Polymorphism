@@ -5,6 +5,7 @@ public class PolymorphMain {
         Cat kitty = new Cat(7, "DJ");
         Dog doggy = new Dog(5, "Flo");
         Horse horsey = new Horse(12, "Bulldozer");
+        Tiger tigey = new Tiger(3, "Claws");
 
         //Let's mess around with our cat methods.
         kitty.sleep();
@@ -28,5 +29,13 @@ public class PolymorphMain {
         horsey.askForFood();
         horsey.lickOwner();
         System.out.println("Our horse is named " + horsey.getName() + " and is " + horsey.getAge() + " years old.");
+        System.out.println();
+
+        //Let's mess around with our tiger methods.
+        tigey.sleep();
+        tigey.makeNoise();
+        System.out.println("Our tiger is named " + tigey.getName() + " and is " + tigey.getAge() + " years old.");
+        tigey.hunt();
+        System.out.println();
     }
 }
